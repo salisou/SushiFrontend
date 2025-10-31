@@ -1,0 +1,52 @@
+.hero-section{
+    position: relative;
+    background-image: url('/images/sushi-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 9rem 1rem;
+    overflow: hidden;
+}
+
+.hero-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+.hero-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 1rem auto 2rem;
+    opacity: 0.9;
+}
+
+.hero-section .btn {
+    font-size: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+
+.hero-section .btn-primary:hover {
+    background-color: #ff7b00;
+    border-color: #ff7b00;
+}
+
+.
