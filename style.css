@@ -86,3 +86,82 @@
     .read-more:hover {
       text-decoration: underline;
     }
+
+/* 🌅 Carosello moderno */
+#carouselExampleDark {
+  position: relative;
+  max-height: 550px; /* altezza massima del carosello */
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Immagine con altezza fissa e taglio elegante */
+.carousel-img {
+  height: 550px;
+  object-fit: cover; /* mantiene le proporzioni e riempie l’area */
+  object-position: center;
+  filter: brightness(0.9);
+  transition: transform 0.6s ease;
+}
+
+/* Effetto zoom leggero all’avanzamento */
+.carousel-item.active .carousel-img {
+  transform: scale(1.05);
+}
+
+/* Overlay trasparente per migliorare la leggibilità del testo */
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: 1;
+}
+
+/* Testo e titolo */
+.carousel-caption {
+  z-index: 2;
+  bottom: 60px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+/* Indicatori (pallini) */
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #ff7b00;
+  opacity: 1;
+}
+
+/* ⬅️➡️ Frecce personalizzate */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #ff7b00;
+}
